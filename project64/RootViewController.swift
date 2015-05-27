@@ -6,7 +6,8 @@ class RootViewController: UIViewController {
     init() {
         super.init(nibName:nil,bundle:nil)
         let viewFrame: CGRect = UIScreen.mainScreen().bounds
-//        self.view = RootView(frame: viewFrame)
+        self.view = RootView(frame: viewFrame)
+        self.mainMenu = MainMenu(frame: viewFrame)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
